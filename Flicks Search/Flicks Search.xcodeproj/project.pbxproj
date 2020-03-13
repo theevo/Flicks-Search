@@ -13,6 +13,8 @@
 		AC48CAEA241BE2620030462B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC48CAE9241BE2620030462B /* Assets.xcassets */; };
 		AC48CAED241BE2620030462B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC48CAEB241BE2620030462B /* LaunchScreen.storyboard */; };
 		AC48CAFC241BE3FA0030462B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48CAFB241BE3FA0030462B /* Movie.swift */; };
+		AC48CAFE241BE7190030462B /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48CAFD241BE7190030462B /* MovieController.swift */; };
+		AC48CB01241BE7E50030462B /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48CB00241BE7E50030462B /* MovieError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AC48CAEC241BE2620030462B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC48CAEE241BE2620030462B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC48CAFB241BE3FA0030462B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		AC48CAFD241BE7190030462B /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		AC48CB00241BE7E50030462B /* MovieError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				AC48CAF8241BE3CB0030462B /* Controllers */,
 				AC48CAF6241BE3BD0030462B /* Model */,
 				AC48CAF5241BE3B50030462B /* Storyboard */,
+				AC48CAFF241BE7D70030462B /* Helpers */,
 				AC48CAF4241BE2750030462B /* Resources */,
 			);
 			path = "Flicks Search";
@@ -112,6 +117,7 @@
 		AC48CAF9241BE3DD0030462B /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AC48CAFD241BE7190030462B /* MovieController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -121,6 +127,14 @@
 			children = (
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AC48CAFF241BE7D70030462B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC48CB00241BE7E50030462B /* MovieError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC48CAFE241BE7190030462B /* MovieController.swift in Sources */,
 				AC48CAE1241BE2600030462B /* AppDelegate.swift in Sources */,
 				AC48CAE3241BE2600030462B /* SceneDelegate.swift in Sources */,
 				AC48CAFC241BE3FA0030462B /* Movie.swift in Sources */,
+				AC48CB01241BE7E50030462B /* MovieError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
