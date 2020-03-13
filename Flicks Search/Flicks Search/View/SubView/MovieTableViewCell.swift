@@ -17,6 +17,7 @@ class MovieTableViewCell: UITableViewCell {
             guard let movieLandedOnCell = movie else { return }
             
             movieTitleLabel.text = movieLandedOnCell.title
+            movieRatingLabel.text = "Rating: \(String(movieLandedOnCell.rating))"
             movieDescriptionLabel.text = movieLandedOnCell.description
             
             MovieController.fetchMoviePoster(for: movieLandedOnCell) { (result) in
@@ -39,5 +40,6 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var movieDescriptionLabel: UILabel!
     @IBOutlet weak var moviePosterImageView: UIImageView!
+    @IBOutlet weak var movieRatingLabel: UILabel!
     
 }

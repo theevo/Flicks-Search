@@ -36,7 +36,7 @@
                                                         <constraint firstAttribute="width" secondItem="jDp-Xu-l7I" secondAttribute="height" multiplier="2:3" id="JYP-Jp-11e"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-gz-drR">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-gz-drR">
                                                     <rect key="frame" x="153.5" y="0.0" width="220.5" height="165"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="(Office Space)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-Qy-OeL">
@@ -45,8 +45,14 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(time to get medieval on your printer)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-Cx-k1e">
-                                                            <rect key="frame" x="0.0" y="63.5" width="220.5" height="101.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Rating: 9.0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBQ-xI-Iug">
+                                                            <rect key="frame" x="0.0" y="53.5" width="220.5" height="16"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="(time to get medieval on your printer)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-Cx-k1e">
+                                                            <rect key="frame" x="0.0" y="89.5" width="220.5" height="75.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -71,6 +77,7 @@
                                 <connections>
                                     <outlet property="movieDescriptionLabel" destination="GJm-Cx-k1e" id="w6N-kX-wrb"/>
                                     <outlet property="moviePosterImageView" destination="jDp-Xu-l7I" id="EOb-n5-Oms"/>
+                                    <outlet property="movieRatingLabel" destination="uBQ-xI-Iug" id="uLh-1F-izf"/>
                                     <outlet property="movieTitleLabel" destination="ubi-Qy-OeL" id="ctX-eo-9eh"/>
                                 </connections>
                             </tableViewCell>
