@@ -13,6 +13,7 @@ enum MovieError: LocalizedError {
     case invalidURL
     case noData
     case badData
+    case noPoster
     
     var errorDescription: String? {
         switch self {
@@ -25,6 +26,8 @@ enum MovieError: LocalizedError {
             return "Server responded with no data."
         case .badData:
             return "Server returned bad data."
+        case .noPoster:
+            return "No poster."
         }
     } // end errorDescription
 } // end enum

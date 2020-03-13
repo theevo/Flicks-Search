@@ -19,6 +19,18 @@ class MovieTableViewCell: UITableViewCell {
             movieTitleLabel.text = movieLandedOnCell.title
             movieDescriptionLabel.text = movieLandedOnCell.description
             
+            MovieController.fetchMoviePoster(for: movieLandedOnCell) { (result) in
+                switch result {
+                    
+                case .success(let poster):
+                    DispatchQueue.main.async {
+                        self.moviePosterImageView.image = poster
+                    }
+                case .failure(let error):
+                    print(error, error.localizedDescription)
+                }
+            }
+            
         }
     }
 

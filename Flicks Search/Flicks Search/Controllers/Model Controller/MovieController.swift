@@ -6,7 +6,7 @@
 //  Copyright © 2020 Theo Vora. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class MovieController {
     
@@ -23,15 +23,15 @@ class MovieController {
     
     
     static func fetchMovies( searchTerm: String,
-                      completion: @escaping (Result<[Movie],MovieError>) -> Void ) {
+                             completion: @escaping (Result<[Movie],MovieError>) -> Void ) {
         // 1) URL
         guard let baseURL = baseSearchURL else { return completion(.failure(.invalidURL)) }
-                
+        
         // 1.1) components
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         
         urlComponents?.queryItems = [URLQueryItem(name: apiKeyTMDB, value: apiValueTMDB),
-        URLQueryItem(name: searchKeyTMDB, value: searchTerm)]
+                                     URLQueryItem(name: searchKeyTMDB, value: searchTerm)]
         
         guard let finalURL = urlComponents?.url else { return completion(.failure(.invalidURL)) }
         print(finalURL)
@@ -66,5 +66,38 @@ class MovieController {
             
         }.resume()
     } // end fetchMovies
+    
+    static func fetchMoviePoster( for movie: Movie,
+                                  completion: @escaping (Result<UIImage,MovieError>) -> Void ) {
+        
+        guard let posterPath = movie.posterPath else { return completion(.failure(.noPoster)) }
+        
+        // 1) URL
+        guard let url = basePosterURL else { return completion(.failure(.invalidURL)) }
+        
+        let fullPosterURL = url.appendingPathComponent(posterPath)
+        
+        print(fullPosterURL)
+        
+        URLSession.shared.dataTask(with: fullPosterURL) { (data, _, error) in
+            
+            if let error = error {
+                print(error, error.localizedDescription)
+                return completion(.failure(.invalidURL))
+            }
+            
+            guard let data = data else {
+                return completion(.failure(.noData))
+            }
+            
+            guard let poster = UIImage(data: data) else {
+                return completion(.failure(.noData)) }
+            
+            return completion(.success(poster))
+            
+        }.resume()
+        
+    } // end fetchMoviePoster
+    
     
 } // end class
