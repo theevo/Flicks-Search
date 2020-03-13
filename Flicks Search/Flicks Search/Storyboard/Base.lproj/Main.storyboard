@@ -27,39 +27,45 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-gz-drR">
-                                            <rect key="frame" x="174" y="11" width="220" height="165"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NRE-Ld-5ww">
+                                            <rect key="frame" x="20" y="11" width="374" height="165"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="(Office Space)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-Qy-OeL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="33.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(time to get medieval on your printer)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-Cx-k1e">
-                                                    <rect key="frame" x="0.0" y="63.5" width="220" height="101.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDp-Xu-l7I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="165"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="jDp-Xu-l7I" secondAttribute="height" multiplier="2:3" id="JYP-Jp-11e"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-gz-drR">
+                                                    <rect key="frame" x="153.5" y="0.0" width="220.5" height="165"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="(Office Space)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-Qy-OeL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="220.5" height="33.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(time to get medieval on your printer)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-Cx-k1e">
+                                                            <rect key="frame" x="0.0" y="63.5" width="220.5" height="101.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
-                                        </stackView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDp-Xu-l7I">
-                                            <rect key="frame" x="20" y="11" width="124" height="165"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="jDp-Xu-l7I" secondAttribute="height" multiplier="2:3" id="JYP-Jp-11e"/>
+                                                <constraint firstItem="jDp-Xu-l7I" firstAttribute="width" secondItem="NRE-Ld-5ww" secondAttribute="width" multiplier="0.33" id="Zun-NU-raF"/>
                                             </constraints>
-                                        </imageView>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="fcJ-gz-drR" secondAttribute="bottom" id="1Di-SF-sKy"/>
-                                        <constraint firstItem="fcJ-gz-drR" firstAttribute="leading" secondItem="jDp-Xu-l7I" secondAttribute="trailing" constant="30" id="1sT-67-amI"/>
-                                        <constraint firstItem="jDp-Xu-l7I" firstAttribute="top" secondItem="NSQ-4f-elE" secondAttribute="topMargin" id="4be-ZX-uDc"/>
-                                        <constraint firstItem="jDp-Xu-l7I" firstAttribute="leading" secondItem="NSQ-4f-elE" secondAttribute="leadingMargin" id="KWn-4b-Kg4"/>
-                                        <constraint firstItem="fcJ-gz-drR" firstAttribute="top" secondItem="NSQ-4f-elE" secondAttribute="topMargin" id="XMo-FL-Oil"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="jDp-Xu-l7I" secondAttribute="bottom" id="o3W-lG-IS3"/>
-                                        <constraint firstItem="jDp-Xu-l7I" firstAttribute="width" secondItem="NSQ-4f-elE" secondAttribute="width" multiplier="0.3" id="pfW-e5-Iqk"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="fcJ-gz-drR" secondAttribute="trailing" id="zqy-H6-zTA"/>
+                                        <constraint firstItem="NRE-Ld-5ww" firstAttribute="leading" secondItem="NSQ-4f-elE" secondAttribute="leadingMargin" id="DpG-dF-S0V"/>
+                                        <constraint firstItem="NRE-Ld-5ww" firstAttribute="bottom" secondItem="NSQ-4f-elE" secondAttribute="bottomMargin" id="IbP-qQ-Hgb"/>
+                                        <constraint firstItem="NRE-Ld-5ww" firstAttribute="centerX" secondItem="NSQ-4f-elE" secondAttribute="centerX" id="QhE-qN-e4q"/>
+                                        <constraint firstItem="NRE-Ld-5ww" firstAttribute="top" secondItem="NSQ-4f-elE" secondAttribute="topMargin" id="U6f-qA-xeo"/>
+                                        <constraint firstItem="NRE-Ld-5ww" firstAttribute="centerY" secondItem="NSQ-4f-elE" secondAttribute="centerY" id="i3n-8K-WWT"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NRE-Ld-5ww" secondAttribute="trailing" id="zEY-aC-E64"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
