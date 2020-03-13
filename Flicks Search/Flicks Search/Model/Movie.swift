@@ -14,9 +14,9 @@ struct TopLevelObject: Codable {
 
 struct Movie: Codable {
     let title: String
-    let rating: String
+    let rating: Float
     let description: String
-    let posterPath: String
+    let posterPath: String?
     
     enum CodingKeys: String, CodingKey {
         case title = "original_title"

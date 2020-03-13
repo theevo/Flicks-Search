@@ -9,7 +9,7 @@
         <!--Flicks Search-->
         <scene sceneID="19z-7p-c6G">
             <objects>
-                <tableViewController id="a5H-ve-70o" sceneMemberID="viewController">
+                <tableViewController id="a5H-ve-70o" customClass="MovieListTableViewController" customModule="Flicks_Search" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7HP-Af-Hk6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Flicks Search" id="IPC-fK-1cr"/>
+                    <connections>
+                        <outlet property="movieSearchBar" destination="yfP-Fk-t5C" id="pSU-7G-9Hv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsl-m2-12w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
