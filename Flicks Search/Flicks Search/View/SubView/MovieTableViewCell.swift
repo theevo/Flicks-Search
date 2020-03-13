@@ -17,13 +17,15 @@ class MovieTableViewCell: UITableViewCell {
             guard let movieLandedOnCell = movie else { return }
             
             movieTitleLabel.text = movieLandedOnCell.title
+            movieDescriptionLabel.text = movieLandedOnCell.description
+            
         }
     }
 
     // MARK: - Outlets
     
     @IBOutlet weak var movieTitleLabel: UILabel!
+    @IBOutlet weak var movieDescriptionLabel: UILabel!
+    @IBOutlet weak var moviePosterImageView: UIImageView!
     
-    
-
 }

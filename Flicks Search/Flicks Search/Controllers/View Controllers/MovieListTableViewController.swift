@@ -43,8 +43,6 @@ class MovieListTableViewController: UITableViewController {
         
         cell.movie = movie
         
-//        cell.textLabel?.text = movies[indexPath.row].title
-
         return cell
     }
     
