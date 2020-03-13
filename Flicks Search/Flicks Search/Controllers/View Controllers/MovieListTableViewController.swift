@@ -37,9 +37,13 @@ class MovieListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as? MovieTableViewCell else { return UITableViewCell() }
         
-        cell.textLabel?.text = movies[indexPath.row].title
+        let movie = movies[indexPath.row]
+        
+        cell.movie = movie
+        
+//        cell.textLabel?.text = movies[indexPath.row].title
 
         return cell
     }

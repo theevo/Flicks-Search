@@ -16,6 +16,7 @@
 		AC48CAFE241BE7190030462B /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48CAFD241BE7190030462B /* MovieController.swift */; };
 		AC48CB01241BE7E50030462B /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48CB00241BE7E50030462B /* MovieError.swift */; };
 		AC48CB03241BECBD0030462B /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48CB02241BECBD0030462B /* MovieListTableViewController.swift */; };
+		AC48CB05241BFC2C0030462B /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48CB04241BFC2C0030462B /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AC48CAFD241BE7190030462B /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
 		AC48CB00241BE7E50030462B /* MovieError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieError.swift; sourceTree = "<group>"; };
 		AC48CB02241BECBD0030462B /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		AC48CB04241BFC2C0030462B /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		AC48CAF7241BE3C30030462B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC48CB06241BFC390030462B /* SubView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +141,14 @@
 				AC48CB00241BE7E50030462B /* MovieError.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AC48CB06241BFC390030462B /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				AC48CB04241BFC2C0030462B /* MovieTableViewCell.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				AC48CB03241BECBD0030462B /* MovieListTableViewController.swift in Sources */,
 				AC48CAFE241BE7190030462B /* MovieController.swift in Sources */,
+				AC48CB05241BFC2C0030462B /* MovieTableViewCell.swift in Sources */,
 				AC48CAE1241BE2600030462B /* AppDelegate.swift in Sources */,
 				AC48CAE3241BE2600030462B /* SceneDelegate.swift in Sources */,
 				AC48CAFC241BE3FA0030462B /* Movie.swift in Sources */,

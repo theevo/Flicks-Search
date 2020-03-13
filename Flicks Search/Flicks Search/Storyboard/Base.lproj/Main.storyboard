@@ -20,22 +20,29 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" textLabel="jfI-0R-eey" rowHeight="158" style="IBUITableViewCellStyleDefault" id="SWn-yv-ymc">
-                                <rect key="frame" x="0.0" y="72" width="414" height="158"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" id="frf-j9-nbZ" customClass="MovieTableViewCell" customModule="Flicks_Search" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SWn-yv-ymc" id="QFW-f3-0h8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="frf-j9-nbZ" id="NSQ-4f-elE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jfI-0R-eey">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="158"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Office Space)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-Qy-OeL">
+                                            <rect key="frame" x="20" y="11" width="111" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ubi-Qy-OeL" secondAttribute="bottom" id="907-rq-gEx"/>
+                                        <constraint firstItem="ubi-Qy-OeL" firstAttribute="leading" secondItem="NSQ-4f-elE" secondAttribute="leadingMargin" id="DwV-lo-QbO"/>
+                                        <constraint firstItem="ubi-Qy-OeL" firstAttribute="top" secondItem="NSQ-4f-elE" secondAttribute="topMargin" id="lgA-KO-wAX"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieTitleLabel" destination="ubi-Qy-OeL" id="ctX-eo-9eh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
