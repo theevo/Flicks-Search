@@ -19,6 +19,7 @@ class MovieTableViewCell: UITableViewCell {
             movieTitleLabel.text = movieLandedOnCell.title
             movieRatingLabel.text = "Rating: \(String(movieLandedOnCell.rating))"
             movieDescriptionLabel.text = movieLandedOnCell.description
+            moviePosterImageView.image = nil // needed in case there fetchMoviePoster fails
             
             MovieController.fetchMoviePoster(for: movieLandedOnCell) { (result) in
                 switch result {
